@@ -1,6 +1,4 @@
-# Nuxt 3 Minimal Starter
-
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+# Headcrab portfolio
 
 ## Setup
 
@@ -19,7 +17,7 @@ pnpm install
 
 ## Development Server
 
-Start the development server on http://localhost:3000
+Start the development server on http://localhost:3000:
 
 ```bash
 npm run dev
@@ -39,4 +37,10 @@ Locally preview production build:
 npm run preview
 ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+## Linting
+
+Find problems in code:
+
+```bash
+npm run lint
+```
