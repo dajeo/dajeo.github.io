@@ -3,7 +3,7 @@ import HeaderLayout from "~/components/layout/HeaderLayout.vue";
 </script>
 
 <template>
-  <HeaderLayout />
+  <header-layout />
   <NuxtPage />
 </template>
 

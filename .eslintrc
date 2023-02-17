@@ -1,0 +1,15 @@
+{
+    "root": true,
+    "extends": ["@nuxt/eslint-config"],
+    "rules": {
+        "quotes": ["error", "double"],
+        "semi": ["error", "always"],
+        "vue/block-lang": ["error", {
+            "script": {
+                "lang": "ts"
+            }
+        }],
+        "vue/component-api-style": ["error", ["script-setup"]],
+        "vue/component-name-in-template-casing": ["error", "kebab-case"]
+    }
+}

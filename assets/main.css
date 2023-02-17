@@ -9,3 +9,21 @@ a {
     text-decoration: none;
     color: inherit;
 }
+
+.btn {
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    font-size: 1em;
+    padding: 10px 28px 10px 28px;
+    transition: ease 0.2s;
+}
+
+.btn:hover {
+    background-color: white;
+    color: black;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}

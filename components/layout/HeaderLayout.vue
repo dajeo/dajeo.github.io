@@ -1,10 +1,14 @@
-<script setup lang="ts"></script>
-
 <template>
   <header>
     <div class="container">
-      <a href="/" class="header-logo">
-        <img src="../../assets/logo.svg" alt="Logo" />
+      <a
+        href="/"
+        class="header-logo"
+      >
+        <img
+          src="../../assets/logo.svg" 
+          alt="Logo"
+        >
       </a>
 
       <nav>
@@ -31,7 +35,7 @@ header {
   padding: 8px;
   position: sticky;
   top: 0;
-  backdrop-filter: saturate(180%) blur(12px);
+  backdrop-filter: blur(12px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 

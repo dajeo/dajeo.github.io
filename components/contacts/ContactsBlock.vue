@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import { defineComponent } from "vue";
 import ContactsItem from "@/components/contacts/ContactsItem.vue";
 
@@ -8,9 +8,16 @@ defineComponent({
 </script>
 
 <template>
+  <h2>Contacts</h2>
   <div>
-    <ContactsItem title="GitHub" url="https://github.com/HeadcrabJ" />
-    <ContactsItem title="Telegram" url="https://t.me/headcrabj" />
+    <contacts-item
+      title="GitHub"
+      url="https://github.com/HeadcrabJ"
+    />
+    <contacts-item
+      title="Telegram"
+      url="https://t.me/headcrabj"
+    />
   </div>
 </template>
 

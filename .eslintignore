@@ -1,0 +1,7 @@
+assets
+public
+node_modules
+dist
+.nuxt
+.idea
+.github

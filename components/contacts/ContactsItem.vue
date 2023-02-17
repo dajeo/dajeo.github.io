@@ -6,7 +6,10 @@ const props = defineProps<{
 </script>
 
 <template>
-  <a :href="props.url" target="_blank">{{ props.title }}</a>
+  <a
+    :href="props.url"
+    target="_blank"
+  >{{ props.title }}</a>
 </template>
 
 <style scoped>

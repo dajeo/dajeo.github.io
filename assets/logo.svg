@@ -15,6 +15,6 @@
       }
     </style>
   </defs>
-  <path id="Прямоугольник_1" data-name="Прямоугольник 1" class="cls-1" d="M50,50H450V450H50V50h0Z"/>
+  <path id="Box" class="cls-1" d="M50,50H450V450H50V50h0Z"/>
   <path id="H" class="cls-2" d="M161.5,360.959h50.345V268H288.8v92.96h50.345V138.278H288.8v85.84H211.841v-85.84H161.5V360.959Z"/>
 </svg>
