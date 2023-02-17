@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="panel block first">
+    <div class="block present">
       <h1>Hi, I'm Headcrab.</h1>
       <p class="block-p">
         I'm a young <b>software engineer</b>. Develop
@@ -8,16 +8,13 @@
       </p>
     </div>
 
-    <div class="panel block">
-      <ProjectsBlock />
+    <div class="block projects">
+      <projects-block />
     </div>
 
-    <div class="panel block about">
-      <AboutBlock />
-    </div>
-
-    <div class="panel block">
-      <ContactsBlock />
+    <div class="block about">
+      <about-block />
+      <contacts-block />
     </div>
   </div>
 </template>
@@ -40,14 +37,25 @@
   max-width: 340px;
 }
 
-.first {
+.present {
   height: calc(100vh - 56px);
-  background-image: url("../assets/bg.jpg");
+  background-image: url("../assets/bg1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
+.projects {
+  background-image: url("../assets/bg2.jpg");
+  background-position: center;
+}
+
 .about {
-  max-width: 600px;
+  background-image: url("../assets/bg3.jpg");
+  background-position: center;
+}
+
+.contacts {
+  background-image: url("../assets/bg4.jpg");
+  background-position: center;
 }
 </style>

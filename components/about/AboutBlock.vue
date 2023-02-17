@@ -14,3 +14,9 @@
     social network called Knight. Frontend on Svelte, backend on Nest.js.
   </p>
 </template>
+
+<style scoped>
+p {
+  max-width: 600px;
+}
+</style>

@@ -37,7 +37,13 @@ const props = defineProps<{
 .item {
   text-align: left;
   padding: 8px;
-  background-color: #5158bb;
+  border: 2px solid white;
+  transition: ease 0.2s;
+}
+
+.item:hover {
+  background-color: white;
+  color: black;
 }
 
 .item-header {
@@ -50,7 +56,7 @@ const props = defineProps<{
 }
 
 .item-techs {
-  color: rgba(255, 255, 255, 0.6);
+  opacity: 0.6;
 }
 
 .item-actions {

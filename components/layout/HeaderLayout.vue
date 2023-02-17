@@ -1,7 +1,7 @@
 <template>
   <header>
     <div class="container">
-      <a
+      <nuxt-link
         href="/"
         class="header-logo"
       >
@@ -9,12 +9,14 @@
           src="../../assets/logo.svg" 
           alt="Logo"
         >
-      </a>
+      </nuxt-link>
 
       <nav>
         <ul>
           <li>
-            <a href="#">All projects</a>
+            <nuxt-link to="/projects">
+              All projects
+            </nuxt-link>
           </li>
         </ul>
       </nav>
@@ -32,6 +34,7 @@
 }
 
 header {
+  z-index: 1;
   padding: 8px;
   position: sticky;
   top: 0;
