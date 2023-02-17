@@ -13,20 +13,14 @@ const props = defineProps<{
         <div class="item-title">
           {{ props.title }}
         </div>
-        <div class="item-techs">
-          ({{ props.techs }})
-        </div>
+        <div class="item-techs">({{ props.techs }})</div>
       </div>
       <div class="item-text">
         <slot />
       </div>
     </div>
     <div class="item-actions">
-      <a 
-        v-for="action in actions" 
-        :key="action.title" 
-        :href="action.url"
-      >
+      <a v-for="action in actions" :key="action.title" :href="action.url">
         {{ action.title }}
       </a>
     </div>

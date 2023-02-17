@@ -42,12 +42,7 @@ defineComponent({
       Chess Social Network Knight.
     </projects-item>
   </div>
-  <nuxt-link
-    class="btn mt-10" 
-    to="/projects"
-  >
-    All projects
-  </nuxt-link>
+  <router-link class="btn mt-10" to="/projects"> All projects </router-link>
 </template>
 
 <style scoped>
