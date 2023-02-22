@@ -1,5 +1,9 @@
+<script setup lang="ts">
+import ContactsItem from "@/components/contacts/ContactsItem.vue";
+</script>
+
 <template>
-  <h2>About me</h2>
+  <h1>About me</h1>
   <p>
     It all started with the very same grown-ups who wrote interesting projects,
     shared their experiences, kind of joked and tried to teach you only good
@@ -13,6 +17,15 @@
     acquaintances I mentioned earlier, I started to develop a chess social
     network called Knight. Frontend on Svelte, backend on Nest.js.
   </p>
+
+  <div>
+    <contacts-item title="GitHub" url="https://github.com/HeadcrabJ" />
+    <contacts-item title="Telegram" url="https://t.me/headcrabj" />
+    <contacts-item
+      title="Monkeytype"
+      url="https://monkeytype.com/profile/Headcrab"
+    />
+  </div>
 </template>
 
 <style scoped>
