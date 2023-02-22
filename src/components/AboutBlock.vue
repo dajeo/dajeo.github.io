@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import ContactsItem from "@/components/contacts/ContactsItem.vue";
+import ContactsItem from "@/components/ContactsItem.vue";
 </script>
 
 <template>

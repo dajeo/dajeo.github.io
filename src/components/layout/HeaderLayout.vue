@@ -1,13 +1,9 @@
 <template>
   <header>
     <div class="container">
-      <router-link to="/" class="header-logo">
+      <a href="/" class="header-logo">
         <img src="../../assets/logo.svg" alt="Logo" width="40" height="40" />
-      </router-link>
-
-      <nav class="header-nav">
-        <router-link to="/projects">All projects</router-link>
-      </nav>
+      </a>
     </div>
   </header>
 </template>
@@ -25,10 +21,6 @@ header {
 .header-logo {
   display: flex;
   align-items: center;
-}
-
-.header-nav {
-  padding-right: 8px;
 }
 
 .container {

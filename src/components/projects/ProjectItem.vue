@@ -7,10 +7,8 @@ const props = defineProps<{
 </script>
 
 <template>
-  <h1>
-    {{ props.title }}
-    <span class="text-muted">({{ props.techs }})</span>
-  </h1>
+  <h1 class="item-title">{{ props.title }}</h1>
+  <span class="item-techs text-muted">({{ props.techs }})</span>
   <div class="item">
     <div>
       <slot />
@@ -25,8 +23,16 @@ const props = defineProps<{
 </template>
 
 <style scoped>
+.item-title {
+  margin: 0;
+}
+
+.item-techs {
+  margin-bottom: 22px;
+}
+
 .item {
-  max-width: 500px;
+  max-width: 600px;
 }
 
 .item-actions {

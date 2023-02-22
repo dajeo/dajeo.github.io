@@ -28,3 +28,7 @@ a {
 .mt-10 {
     margin-top: 10px;
 }
+
+.text-muted {
+    opacity: 0.6;
+}
