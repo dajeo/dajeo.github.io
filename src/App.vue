@@ -4,7 +4,6 @@ import HeaderLayout from "@/components/layout/HeaderLayout.vue";
 import ModuleProject from "@/components/projects/ModuleProject.vue";
 import KnightProject from "@/components/projects/KnightProject.vue";
 import EclipseProject from "@/components/projects/EclipseProject.vue";
-import AboutBlock from "@/components/AboutBlock.vue";
 import HomeBlock from "@/components/HomeBlock.vue";
 
 const currentPage = ref<number>(0);
@@ -93,10 +92,6 @@ window.addEventListener("keydown", (e: KeyboardEvent) => {
     <div class="block eclipse">
       <eclipse-project />
     </div>
-
-    <div class="block about">
-      <about-block />
-    </div>
   </div>
 </template>
 
@@ -116,21 +111,16 @@ window.addEventListener("keydown", (e: KeyboardEvent) => {
   background-size: cover;
 }
 
-
 .module {
-  background-image: url("./assets/bg2.jpg");
+  background-image: url("./assets/bg1.jpg");
 }
 
 .knight {
-  background-image: url("./assets/bg3.jpg");
+  background-image: url("./assets/bg2.jpg");
 }
 
 .eclipse {
-  background-image: url("./assets/bg4.jpg");
-}
-
-.about {
-  background-image: url("./assets/bg5.jpg");
+  background-image: url("./assets/bg3.jpg");
 }
 
 .arrow-position {

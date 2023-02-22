@@ -32,12 +32,11 @@ const props = defineProps<{
 }
 
 .item {
-  max-width: 600px;
+  max-width: 400px;
 }
 
 .item-actions {
   margin-top: 12px;
-  text-decoration: underline;
   color: inherit;
 }
 </style>

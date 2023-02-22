@@ -10,6 +10,8 @@ import ProjectItem from "@/components/projects/ProjectItem.vue";
       { title: 'GitHub', url: 'https://github.com/HeadcrabJ/knight-nest' },
     ]"
   >
-    Multifunctional Discord bot control panel for Android.
+    Multifunctional Discord bot control panel for Android. Developed by a team
+    of great people at
+    <a class="link" href="https://github.com/Night-Devs">Night Devs</a>.
   </project-item>
 </template>
