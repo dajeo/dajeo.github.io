@@ -12,7 +12,6 @@
       <div>
         <a href="https://github.com/HeadcrabJ">GitHub</a>
         <a href="https://t.me/headcrabj">Telegram</a>
-        <a href="https://monkeytype.com/profile/Headcrab">Monkeytype</a>
       </div>
     </div>
   </div>
