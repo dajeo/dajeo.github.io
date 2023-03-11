@@ -4,7 +4,7 @@
       <img class="img" src="../assets/man.png" alt="Man" />
     </div>
     <div class="content">
-      <h1 class="content-title">Hi, I'm Headcrab.</h1>
+      <h1 class="content-title">Hi, I'm Danil.</h1>
       <p>
         I'm a young <b>software engineer</b>. Develop
         <b>full-stack</b> applications on many different technologies.
@@ -12,6 +12,7 @@
       <div>
         <a href="https://github.com/HeadcrabJ">GitHub</a>
         <a href="https://t.me/headcrabj">Telegram</a>
+        <a href="https://gitlab.com/HeadcrabJ">GitLab</a>
       </div>
     </div>
   </div>
