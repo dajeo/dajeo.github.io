@@ -35,7 +35,7 @@
 @media (max-width: 700px) {
   .container {
     grid-template-columns: 1fr;
-    margin-bottom: 80px;
+    margin-bottom: 100px;
   }
 
   .img {
