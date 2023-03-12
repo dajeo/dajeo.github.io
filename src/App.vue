@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { onMounted, ref } from "vue";
-import HeaderLayout from "@/components/layout/HeaderLayout.vue";
 import ModuleProject from "@/components/projects/ModuleProject.vue";
 import KnightProject from "@/components/projects/KnightProject.vue";
 import EclipseProject from "@/components/projects/EclipseProject.vue";
@@ -64,7 +63,6 @@ window.addEventListener("keydown", (e: KeyboardEvent) => {
 </script>
 
 <template>
-  <header-layout />
   <div>
     <div class="arrow-position">
       <div class="arrow-group">
