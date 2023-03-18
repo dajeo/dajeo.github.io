@@ -6,8 +6,7 @@
     <div class="content">
       <h1 class="content-title">Hi, I'm Danil.</h1>
       <p>
-        I'm a young <b>software engineer</b>. Develop
-        <b>full-stack</b> applications on many different technologies.
+        I'm a young <b>software engineer</b>. Develop <b>high-load</b> services in Golang. Analysis and optimizing code.
       </p>
       <div>
         <a href="https://github.com/HeadcrabJ">GitHub</a>
