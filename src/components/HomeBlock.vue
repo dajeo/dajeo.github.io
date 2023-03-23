@@ -11,7 +11,6 @@
       <div>
         <a href="https://github.com/HeadcrabJ">GitHub</a>
         <a href="https://t.me/headcrabj">Telegram</a>
-        <a href="https://gitlab.com/HeadcrabJ">GitLab</a>
       </div>
     </div>
   </div>
