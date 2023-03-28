@@ -9,8 +9,8 @@
         I'm a young <b>software engineer</b>. Develop <b>high-load</b> services in Golang. Analysis and optimizing code.
       </p>
       <div>
-        <a href="https://github.com/HeadcrabJ">GitHub</a>
-        <a href="https://t.me/headcrabj">Telegram</a>
+        <a href="https://github.com/dajeo">GitHub</a>
+        <a href="https://t.me/dajeo">Telegram</a>
       </div>
     </div>
   </div>

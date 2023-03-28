@@ -7,7 +7,7 @@ import ProjectItem from "@/components/projects/ProjectItem.vue";
     title="Eclipse"
     techs="Kotlin, Android"
     :actions="[
-      { title: 'GitHub', url: 'https://github.com/HeadcrabJ/knight-nest' },
+      { title: 'GitHub', url: 'https://github.com/dajeo/knight-nest' },
     ]"
   >
     Multifunctional Discord bot control panel for Android. Developed by a team

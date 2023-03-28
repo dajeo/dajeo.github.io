@@ -14,11 +14,11 @@ import ProjectItem from "@/components/projects/ProjectItem.vue";
     ]"
   >
     Chess Social Network Knight. Developed by me,
-    <a class="link" href="https://github.com/MineEjo">MineEjo</a> and
+    <a class="link" href="https://github.com/mineejo">MineEjo</a> and
     <a class="link" href="https://github.com/orchst">orchst</a>. Originally
     backend developed in Kotlin and Ktor, then rewritten in TypeScript and
     Nest.js. Frontend by
-    <a class="link" href="https://github.com/MineEjo">MineEjo</a> written in
+    <a class="link" href="https://github.com/Mineejo">MineEjo</a> written in
     JavaScript and Svelte.
   </project-item>
 </template>
