@@ -1,4 +1,4 @@
-# Headcrab portfolio
+# Portfolio
 
 ## Setup
 
