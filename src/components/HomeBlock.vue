@@ -1,5 +1,3 @@
-<script></script>
-
 <template>
   <h1 class="title">dajeo</h1>
   <p>
