@@ -1,9 +1,10 @@
 <script setup lang="ts">
 import { onMounted, ref } from "vue";
+import HomeBlock from "@/components/HomeBlock.vue";
+import RefsBlock from "@/components/RefsBlock.vue";
 import ModuleProject from "@/components/projects/ModuleProject.vue";
 import KnightProject from "@/components/projects/KnightProject.vue";
 import EclipseProject from "@/components/projects/EclipseProject.vue";
-import HomeBlock from "@/components/HomeBlock.vue";
 
 const currentPage = ref<number>(0);
 const sections = ref<Array<Element>>([]);
@@ -32,6 +33,13 @@ function next() {
     return;
   }
   currentPage.value += 1;
+  sections.value[currentPage.value]?.scrollIntoView({
+    behavior: "smooth",
+  });
+}
+
+function refs() {
+  currentPage.value = 4
   sections.value[currentPage.value]?.scrollIntoView({
     behavior: "smooth",
   });
@@ -66,11 +74,14 @@ window.addEventListener("keydown", (e: KeyboardEvent) => {
   <div>
     <div class="arrow-position">
       <div class="arrow-group">
-        <span @click="previous" class="arrow">
-          <img src="./assets/a_left.svg" alt="Arrow left" />
+        <span @click="previous" class="pointer">
+          <img src="./assets/a_before.svg" class="arrow" />
         </span>
-        <span @click="next" class="arrow">
-          <img src="./assets/a_right.svg" alt="Arrow right" />
+        <span @click="refs" class="pointer">
+          Refs
+        </span>
+        <span @click="next" class="pointer">
+          <img src="./assets/a_next.svg" class="arrow" />
         </span>
       </div>
     </div>
@@ -89,6 +100,10 @@ window.addEventListener("keydown", (e: KeyboardEvent) => {
 
     <div class="block eclipse">
       <eclipse-project />
+    </div>
+
+    <div class="block refs">
+      <refs-block />
     </div>
   </div>
 </template>
@@ -109,6 +124,10 @@ window.addEventListener("keydown", (e: KeyboardEvent) => {
   background-size: cover;
 }
 
+.home {
+  background-image: url("./assets/bg0.jpg");
+}
+
 .module {
   background-image: url("./assets/bg1.jpg");
 }
@@ -121,6 +140,10 @@ window.addEventListener("keydown", (e: KeyboardEvent) => {
   background-image: url("./assets/bg3.jpg");
 }
 
+.refs {
+  color: white;
+}
+
 .arrow-position {
   width: 100%;
   position: fixed;
@@ -130,11 +153,15 @@ window.addEventListener("keydown", (e: KeyboardEvent) => {
 
 .arrow-group {
   display: flex;
-  justify-content: space-between;
-  padding: 14px 44px 14px 44px;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .arrow {
+  width: 30px;
+}
+
+.pointer {
   cursor: pointer;
 }
 </style>
