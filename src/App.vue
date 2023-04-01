@@ -75,13 +75,13 @@ window.addEventListener("keydown", (e: KeyboardEvent) => {
     <div class="arrow-position">
       <div class="arrow-group">
         <span @click="previous" class="pointer">
-          <img src="./assets/a_before.svg" class="arrow" />
+          <img src="./assets/a_before.svg" alt="Arrow before" width="30" height="30" />
         </span>
         <span @click="refs" class="pointer">
           Refs
         </span>
         <span @click="next" class="pointer">
-          <img src="./assets/a_next.svg" class="arrow" />
+          <img src="./assets/a_next.svg" alt="Arrow next" width="30" height="30" />
         </span>
       </div>
     </div>
@@ -125,19 +125,19 @@ window.addEventListener("keydown", (e: KeyboardEvent) => {
 }
 
 .home {
-  background-image: url("./assets/bg0.jpg");
+  background-image: url("./assets/bg0.webp");
 }
 
 .module {
-  background-image: url("./assets/bg1.jpg");
+  background-image: url("./assets/bg1.webp");
 }
 
 .knight {
-  background-image: url("./assets/bg2.jpg");
+  background-image: url("./assets/bg2.webp");
 }
 
 .eclipse {
-  background-image: url("./assets/bg3.jpg");
+  background-image: url("./assets/bg3.webp");
 }
 
 .refs {
@@ -155,10 +155,6 @@ window.addEventListener("keydown", (e: KeyboardEvent) => {
   display: flex;
   justify-content: space-around;
   align-items: center;
-}
-
-.arrow {
-  width: 30px;
 }
 
 .pointer {
