@@ -1,7 +1,7 @@
 <template>
   <h1 class="title">dajeo</h1>
   <p>
-    I'm a young <b>software engineer</b>. Develop <b>high-load</b> services in Golang. Analysis and optimizing code.
+    Hi, my name is Danil (dajeo). I'm a young <b>software engineer</b>. Develop <b>high-load</b> services in Golang. Analysis and optimizing code.
   </p>
 </template>
 

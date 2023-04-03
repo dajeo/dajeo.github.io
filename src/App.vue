@@ -38,6 +38,13 @@ function next() {
   });
 }
 
+function home() {
+  currentPage.value = 0
+  sections.value[currentPage.value]?.scrollIntoView({
+    behavior: "smooth",
+  });
+}
+
 function refs() {
   currentPage.value = 4
   sections.value[currentPage.value]?.scrollIntoView({
@@ -71,19 +78,22 @@ window.addEventListener("keydown", (e: KeyboardEvent) => {
 </script>
 
 <template>
+  <header class="header">
+    <div class="header-container">
+      <h3 @click="home" class="pointer">
+        dajeo
+      </h3>
+      <span @click="refs" class="pointer">
+        References
+      </span>
+    </div>
+  </header>
+
   <div>
     <div class="arrow-position">
-      <div class="arrow-group">
-        <span @click="previous" class="pointer">
-          <img src="./assets/a_before.svg" alt="Arrow before" width="30" height="30" />
-        </span>
-        <span @click="refs" class="pointer">
-          Refs
-        </span>
-        <span @click="next" class="pointer">
-          <img src="./assets/a_next.svg" alt="Arrow next" width="30" height="30" />
-        </span>
-      </div>
+      <span @click="next" class="arrow pointer">
+        Down
+      </span>
     </div>
 
     <div class="block home">
@@ -109,6 +119,26 @@ window.addEventListener("keydown", (e: KeyboardEvent) => {
 </template>
 
 <style scoped>
+h3 {
+  margin: 0;
+}
+
+.header {
+  position: fixed;
+  backdrop-filter: blur(10px);
+  width: 100%;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: rgba(255, 255, 255, 0.1);
+}
+
+.header-container {
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .block {
   margin: auto;
   display: flex;
@@ -151,10 +181,16 @@ window.addEventListener("keydown", (e: KeyboardEvent) => {
   bottom: 0;
 }
 
-.arrow-group {
+.arrow {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  width: 100%;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: center;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
 }
 
 .pointer {
