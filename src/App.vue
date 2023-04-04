@@ -83,19 +83,14 @@ window.addEventListener("keydown", (e: KeyboardEvent) => {
       <h3 @click="home" class="pointer">
         dajeo
       </h3>
-      <span @click="refs" class="pointer">
-        References
-      </span>
+      <div>
+        <a class="header-link" href="https://blog.dajeo.by/" target="_blank">Blog</a>
+        <a @click="refs" class="header-link pointer">References</a>
+      </div>
     </div>
   </header>
 
   <div>
-    <div class="arrow-position">
-      <span @click="next" class="arrow pointer">
-        Down
-      </span>
-    </div>
-
     <div class="block home">
       <home-block />
     </div>
@@ -116,6 +111,12 @@ window.addEventListener("keydown", (e: KeyboardEvent) => {
       <refs-block />
     </div>
   </div>
+
+  <footer class="arrow-position">
+    <span @click="next" class="arrow pointer">
+      Down
+    </span>
+  </footer>
 </template>
 
 <style scoped>
@@ -137,6 +138,10 @@ h3 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.header-link {
+  text-decoration: none;
 }
 
 .block {
