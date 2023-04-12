@@ -84,7 +84,6 @@ window.addEventListener("keydown", (e: KeyboardEvent) => {
         dajeo
       </h3>
       <div>
-        <a class="header-link" href="https://blog.dajeo.by/" target="_blank">Blog</a>
         <a @click="refs" class="header-link pointer">References</a>
       </div>
     </div>
