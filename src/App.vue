@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { onMounted, ref } from "vue";
 import HomeBlock from "@/components/HomeBlock.vue";
-import RefsBlock from "@/components/RefsBlock.vue";
 import ModuleProject from "@/components/projects/ModuleProject.vue";
 import KnightProject from "@/components/projects/KnightProject.vue";
 import EclipseProject from "@/components/projects/EclipseProject.vue";
@@ -45,13 +44,6 @@ function home() {
   });
 }
 
-function refs() {
-  currentPage.value = 4
-  sections.value[currentPage.value]?.scrollIntoView({
-    behavior: "smooth",
-  });
-}
-
 onMounted(() => {
   if ("scrollRestoration" in history) {
     history.scrollRestoration = "manual";
@@ -83,9 +75,6 @@ window.addEventListener("keydown", (e: KeyboardEvent) => {
       <h3 @click="home" class="pointer">
         dajeo
       </h3>
-      <div>
-        <a @click="refs" class="header-link pointer">References</a>
-      </div>
     </div>
   </header>
 
@@ -104,10 +93,6 @@ window.addEventListener("keydown", (e: KeyboardEvent) => {
 
     <div class="block eclipse">
       <eclipse-project />
-    </div>
-
-    <div class="block refs">
-      <refs-block />
     </div>
   </div>
 
@@ -172,10 +157,6 @@ h3 {
 
 .eclipse {
   background-image: url("./assets/bg3.webp");
-}
-
-.refs {
-  color: white;
 }
 
 .arrow-position {

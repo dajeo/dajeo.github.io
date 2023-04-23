@@ -1,8 +1,12 @@
 <template>
   <h1 class="title">dajeo</h1>
   <p>
-    Hi, my name is Danil (dajeo). I'm a young <b>software engineer</b>. Develop <b>high-load</b> services in Golang. Analysis and optimizing code.
+    Hi, my name is Danil (dajeo). I'm a young <b>backend software engineer</b>.
   </p>
+  <div>
+    <a href="https://github.com/dajeo">GitHub</a>
+    <a href="https://t.me/dajeo">Telegram</a>
+  </div>
 </template>
 
 <style scoped>
